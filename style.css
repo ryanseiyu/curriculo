@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 :root {
-	--primary-color: #ff7613;
+	--primary-color: black;
 	--text-color: #727171;
 }
 html {
@@ -14,17 +14,18 @@ html {
 }
 body {
 	font-family: Inter, sans-serif;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 /* common styles */
 img {
 	width: 100%;
+	border-radius: 50%;
 }
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 .description {
 	margin-top: 1rem;
@@ -45,7 +46,7 @@ a {
 }
 .item_title {
 	font-size: 1.6rem;
-	color: white;
+	color: black;
 	font-weight: 500;
 	margin: 0.8rem 0;
 }
@@ -62,9 +63,13 @@ a {
 	margin: 0 auto;
 	display: grid;
 	padding: 5rem;
-	background: #070707;
+	background: white;
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
+}
+.profile_container2 {
+	/* padding: 20px; */
+	margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
 	.container {
@@ -113,8 +118,11 @@ a {
 .profile_profileImg {
 	max-width: 250px;
 }
+.profile_box {
+	margin-left: 40px;
+}
 .profile_name_firstName {
-	color: white;
+	color: black;
 	font-weight: 200;
 	font-size: clamp(2rem, 8vw, 4rem);
 	text-transform: uppercase;
@@ -122,16 +130,20 @@ a {
 	margin-bottom: -0.8rem;
 }
 .profile_name_lastName {
-	color: var(--primary-color);
+	color: black;
 	font-weight: 700;
 	font-size: clamp(2.5rem, 15vw, 7rem);
 	text-transform: uppercase;
 	display: block;
 }
+.profile_name {
+	margin-top: 40px;
+}
 .profile_title {
 	font-size: 1.5rem;
 	font-weight: 400;
 	text-transform: uppercase;
+	color: black;
 }
 .downloadBtn {
 	display: block;
@@ -146,13 +158,24 @@ a {
 	.profile_container {
 		flex-direction: column;
 	}
+	.profile_profileImg {
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	img {
+		width: 100%;
+	}
 }
+
 
 /* Expertise */
 .skills_list {
 	margin-top: 1rem;
 	margin-left: 2rem;
 	line-height: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 /* Ref  */
@@ -235,5 +258,63 @@ hr {
 @media only screen and (max-width: 768px) {
 	hr {
 		margin: 0 auto;
+	}
+}
+
+.contact {
+	text-align: center;
+}
+
+.social {
+	text-align: center;
+}
+
+.social a {
+	display: flex;
+	justify-content: center;
+}
+
+/* #botao2 {
+	position: relative;
+}
+#botao1 {
+	position: relative;
+} */
+
+/* CSS */
+.button-36 {
+	position: relative;
+	background-image: black;
+	border-radius: 8px;
+	border-style: none;
+	box-sizing: border-box;
+	color: black;
+	cursor: pointer;
+	flex-shrink: 0;
+	font-size: 16px;
+	font-weight: 500;
+	height: 4rem;
+	padding: 0 1.6rem;
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+	transition: all .5s;
+	/* user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation; */
+}
+
+.button-36:hover {
+	box-shadow: rgba(0, 0, 0, 0.5) 0 1px 30px;
+	transition-duration: .1s;
+}
+
+@media (max-width: 768px) {
+	.button-36 {
+		display: block;
+		padding: 0 2.6rem;
+		position: relative;
+		right: 0;
+		top: 0;
+		margin-bottom: 8px;
 	}
 }
