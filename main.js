@@ -16,6 +16,8 @@ const header5_subtitle1Port = document.getElementById("header5_subtitle1").textC
 const description5_1Port = document.getElementById("description5_1").textContent;
 const header5_subtitle2Port = document.getElementById("header5_subtitle2").textContent;
 const description5_2Port = document.getElementById("description5_2").textContent;
+const header5_subtitle3Port = document.getElementById("header5_subtitle3").textContent;
+const description5_3Port = document.getElementById("description5_3").textContent;
 const header6Port = document.getElementById("header6").textContent;
 const icon1Port = document.getElementById("icon1").textContent;
 const icon2Port = document.getElementById("icon2").textContent;
@@ -43,6 +45,8 @@ function changeLanguage(lang) {
     let description5_1 = document.getElementById("description5_1")
     let header5_subtitle2 = document.getElementById("header5_subtitle2")
     let description5_2 = document.getElementById("description5_2")
+    let header5_subtitle3 = document.getElementById("header5_subtitle3")
+    let description5_3 = document.getElementById("description5_3")
     let header6 = document.getElementById("header6")
     let icon1 = document.getElementById("icon1")
     let icon2 = document.getElementById("icon2")
@@ -52,7 +56,7 @@ function changeLanguage(lang) {
     let header8 = document.getElementById("header8")
 
     if (lang == "en") {
-        description.innerHTML = "Creative and innovative Full Stack developer, with knowledge into React, Javascript, HTML, CSS and Java. Versatible portfolio on different programming languages(low-level and high level languages) and solutions, I have great expertise with computers, from software to hardware with a Graduate Diploma of Electrical Engineering on UTFPR, located at Curitiba PR. I love to explore and embrace new cultures and to always develop myself to learn new things. I have great expectations to grow and develop whoever I'm going to work with.";
+        description.innerHTML = "I am a creative and innovative developer with specialized knowledge in React, Javascript, HTML, CSS, and Java. I completed a Full Stack course at EBAC and possess a diverse portfolio with expertise in various languages and solutions. My passion for IT began at an early age, as I delved into Excel and deepened my hardware knowledge while studying Electrical Engineering at the Federal Technological University of Paraná. Furthermore, I am a curious individual, always eager to explore new cultures and learn new things. I am excited about the growth and development opportunities within the company where I will be working.";
         header1.innerHTML = "Languages"
         header2.innerHTML = "Projects and Activities"
         header2_1.innerHTML = "Board Member of Democratic Elections"
@@ -67,9 +71,11 @@ function changeLanguage(lang) {
         description4_1.innerHTML = "Certificate of completion, from DIO (Java Bootcamp course)." 
         header5.innerHTML = "Experience" 
         header5_subtitle1.innerHTML = "Developer"
-        description5_1.innerHTML = "Creation of PowerBI courses, using Power Point presentations and macros. Supervision of students to learn Microsoft Office tools."
+        description5_1.innerHTML = "Creation of PowerBI courses, using Power Point presentations and macros. <br> Supervision of students to learn Microsoft Office tools."
         header5_subtitle2.innerHTML = "Research Assistent"
-        description5_2.innerHTML = "Matlab programming and Lumerical simulations. Lithography processes and analysis of nano materials"
+        description5_2.innerHTML = "Matlab programming and Lumerical simulations.<br> Lithography processes and analysis of nano materials"
+        header5_subtitle3.innerHTML = "Developer"
+        description5_3.innerHTML = "Integration with commercial and fiscal management systems related to government databases. <br>Creation of websites and systems for business management."
         header6.innerHTML = "Interests"
         icon1.innerHTML = "Financing"
         icon2.innerHTML = "Books"
@@ -96,6 +102,8 @@ function changeLanguage(lang) {
         description5_1.innerHTML = description5_1Port
         header5_subtitle2.innerHTML = header5_subtitle2Port
         description5_2.innerHTML = description5_2Port
+        header5_subtitle3.innerHTML = header5_subtitle3Port
+        description5_3.innerHTML = description5_3Port
         header6.innerHTML = header6Port
         icon1.innerHTML = icon1Port
         icon2.innerHTML = icon2Port
