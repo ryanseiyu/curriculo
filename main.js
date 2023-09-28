@@ -87,7 +87,7 @@ function changeLanguage(lang) {
 		description3_2.innerHTML =
 			"Full scholarship to be an Exchange Student at the United States for a year. Studied at Wayne State University (Detroit, MI) and New Jersey Institute of Technology (Newark, NJ).";
 		description3_3.innerHTML =
-			"Full Stack Developer course to learn HTML, CSS, Javascript, Node.js, Git and React at EBAC.";
+			"Full Stack Java Developer course to learn Java, HTML, CSS, Javascript, Node.js, Git and React at EBAC.";
 		header4.innerHTML = "Certifications";
 		header4_1.innerHTML = "PAN Bank Java Developer";
 		description4_1.innerHTML =
