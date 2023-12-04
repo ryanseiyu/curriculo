@@ -1,3 +1,7 @@
+window.onload = function () {
+	document.getElementById("botao2").click();
+};
+
 const descriptionPort = document.getElementById("description").textContent;
 const header1Port = document.getElementById("header1").textContent;
 const header2Port = document.getElementById("header2").textContent;
