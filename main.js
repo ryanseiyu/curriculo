@@ -146,7 +146,7 @@ function changeLanguage(lang) {
 			"Marketing of electric energy, including contract negotiations.<br>Effective mediation between suppliers and customers.<br>Active and analytical 	prospecting of new clients and sales strategies.<br>Technical development of a customized Excel macros to automate the company's email sending process to its employees, resulting in a reduction of over 90% in the time required to complete this task.";
 		header5_subtitle4.innerHTML = "Manager";
 		description5_4.innerHTML =
-			"Team leadership, goal setting, and management strategy definition.<br>Experience in financial accounting and tax planning.<br>High-quality graphic design for marketing.<br>Successful technical integration with government back-end systems, ensuring tax compliance, reduzing costs to about 20%.";
+			"Team leadership, goal setting, and management strategy definition.<br>Experience in financial accounting and tax planning.<br>High-quality graphic design for marketing.<br>Successful technical integration with government back-end systems, ensuring tax compliance, reducing costs to about 20%.";
 		header6.innerHTML = "Soft Skills";
 		item6_1.innerHTML = "Problem Solving";
 		item6_2.innerHTML = "Teamwork";
