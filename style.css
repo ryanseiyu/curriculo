@@ -71,7 +71,7 @@ a {
 	width: 100%;
 	margin: 0 auto;
 	display: grid;
-	padding: 5rem;
+	padding: 0;
 	background: white;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
@@ -80,15 +80,6 @@ a {
 .profile_container2 {
 	/* padding: 20px; */
 	margin-top: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-	.container {
-		width: 100%;
-		grid-template-columns: 1fr;
-		padding: 3rem;
-		gap: 7rem;
-	}
 }
 
 .profile {
@@ -117,15 +108,7 @@ a {
 	flex: 1;
 }
 
-@media only screen and (max-width: 768px) {
-	.profile {
-		margin-bottom: 0;
-	}
 
-	.group-3 {
-		flex-direction: column;
-	}
-}
 
 /* profile */
 .profile_container {
@@ -134,7 +117,8 @@ a {
 }
 
 .profile_profileImg {
-	max-width: 250px;
+	width: 20%;
+	margin-top: 24px;
 }
 
 .profile_box {
@@ -180,21 +164,7 @@ a {
 	color: var(--primary-color);
 }
 
-@media only screen and (max-width: 768px) {
-	.profile_container {
-		flex-direction: column;
-	}
 
-	.profile_profileImg {
-		max-width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	img {
-		width: 100%;
-	}
-}
 
 
 /* Expertise */
@@ -292,11 +262,7 @@ hr {
 	border-top: 2px solid rgba(128, 128, 128, 0.229);
 }
 
-@media only screen and (max-width: 768px) {
-	hr {
-		margin: 0 auto;
-	}
-}
+
 
 .contact {
 	text-align: center;
@@ -345,16 +311,6 @@ hr {
 	transition-duration: .1s;
 }
 
-@media (max-width: 768px) {
-	.button-36 {
-		display: block;
-		padding: 0 2.6rem;
-		position: relative;
-		right: 0;
-		top: 0;
-		margin-bottom: 8px;
-	}
-}
 
 .pronouns {
 	margin-top: 1rem;
@@ -449,4 +405,86 @@ hr {
 
 #companyLabel {
 	color: var(--text-color);
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 0;
+		gap: 1rem;
+	}
+
+	.profile_container {
+		padding: 1em;
+	}
+
+	.profile_container2 {
+		padding: 1em;
+	}
+
+	.group-1,
+	.group-2,
+	.group-3 {
+		padding: 5%;
+	}
+
+	#softskills_list {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	body>div>div.group-1>div.skills>ul {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.button-36 {
+		display: block;
+		padding: 0 2.6rem;
+		position: relative;
+		right: 0;
+		top: 0;
+		margin-bottom: 8px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	hr {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.profile_container {
+		flex-direction: column;
+	}
+
+	.profile_profileImg {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.profile_box {
+		margin-left: 0;
+	}
+
+	#hardskills_list {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.profile {
+		margin-bottom: 0;
+	}
+
+	.group-3 {
+		flex-direction: column;
+	}
 }
